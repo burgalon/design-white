@@ -5,7 +5,7 @@
 		<h2>{{page.name}}</h2>
 		<ul class="catalog {{ page.tags_string }} horizontal">
 			{% for i in items %}
-				<li class="c{{forloop.counter}} {% cycle 'odd' 'even' %}">
+			<li class="c{{forloop.counter}} {% cycle 'odd' 'even' %} {% if portfolio.design.dic.thumbs_per_line and forloop.counter|divisibleby:portfolio.design.dic.thumbs_per_line %}last{% endif %}">
 					<a target="_blank" class="item-thumb new-window" href="{{i.dic.description}}">{{ i.render_thumb }}</a>
 					<a target="_blank" class="item-title new-window" href="{{i.dic.description}}">{{i}}</a>
 					{% if i.dic.description %}

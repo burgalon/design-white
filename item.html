@@ -58,7 +58,7 @@
 	</div>
 	<div class="item_wrap prepend-1 span-17 last">
 		{% ifequal item.mime_type "image/jpeg" %}
-			<a href="{{ next_item.url }}" title="{{ next_item.name }}">{{ item.render }}</a>
+			<a href="{{ next_item.url }}">{{ item.render }}</a>
 		{% else %}
 			{{item.render}}
 		{% endifequal %}
