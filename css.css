@@ -91,6 +91,7 @@ ul {margin: 0;padding: 0;}
 
 /** site/home.html **/
 .banner {display: block; width: 310px; height: 310px; text-indent: -1000em;overflow:hidden;}
+.rtl .banner {background-position: 10px 0;}
 .banner-text {height: 230px; line-height: 310px; vertical-align: middle;}
 
 /** site/contact.html **/
