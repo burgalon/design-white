@@ -7,6 +7,11 @@
 	{{ page.dic.description }}
 </div>
 <div class="span-8 colborder">
+	{% if message %}
+		<div class="notice">
+			{{message|linebreaks}}
+		</div>
+	{% endif %}
 	{%if form%}
 		<form method="post" action=".">
 			<p><label for="id_name">שם:</label> <input id="id_name" name="name" maxlength="100" type="text"></p>
@@ -16,11 +21,6 @@
 			<input type="submit" class="submit" value="שלח" />
 		</form>
 	{%endif%}
-	{% if message %}
-		<div class="notice">
-			{{message|linebreaks}}
-		</div>
-	{% endif %}
 </div>
 <div class="span-7 last">
 	<h3>טלפון</h3>

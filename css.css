@@ -57,7 +57,7 @@ ul {margin: 0;padding: 0;}
 
 /** site/item.html **/
 .item_wrap img {width: 670px;}
-.item-photo {display: block; width: 10px; height: 10px; margin-left: 5px; background: grey; border: 1px solid black; text-indent: -9999px; overflow:hidden; text-decoration:none; float: left;}
+.item-photo {display: block; width: 10px; height: 10px; margin-left: 5px; background: grey; border: 1px solid black; text-indent: -9999px; overflow:hidden; direction: ltr; text-decoration:none; float: left;}
 .rtl .item-photo {float: right;}
 .item-photo.active {background: none;}
 
@@ -90,14 +90,14 @@ ul {margin: 0;padding: 0;}
 .last {margin: 0 !important;}
 
 /** site/home.html **/
-.banner {display: block; width: 310px; height: 310px; text-indent: -1000em;overflow:hidden;}
+.banner {display: block; width: 310px; height: 310px; text-indent: -1000em;overflow:hidden; direction: ltr;}
 .rtl .banner {background-position: 10px 0;}
 .banner-text {height: 230px; line-height: 310px; vertical-align: middle;}
 
 /** site/contact.html **/
 textarea, input {width: 240px;}
 label {display: block;}
-.icon24 {display: block; width: 24px; height: 24px; text-indent: -1000em; overflow:hidden;}
+.icon24 {display: block; width: 24px; height: 24px; overflow:hidden; direction: ltr;}
 #social {margin: 0;}
 #social a {padding: 0 0.1em;}
 
