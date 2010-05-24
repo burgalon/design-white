@@ -4,6 +4,9 @@
 {% block content %}
 <div class="span-7 colborder">
 	<h2>{{ page.name }}</h2>
+	{% for file in page.files %}
+		{{ file.render }}
+	{% endfor %}
 	{{ page.dic.description }}
 </div>
 <div class="span-8 colborder">
