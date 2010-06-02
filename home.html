@@ -12,6 +12,7 @@
 {% block content %}
 <div class="span-24 last banner">
 	{{ page.dic.moto }}
+	<a href="{{ page.url }}" title="{{ page.name }}">{{ page.render }}</a>
 </div>
 <div class="span-24">
 	{% with "horizontal" as catalog_class %}
