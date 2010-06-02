@@ -90,7 +90,7 @@ ul {margin: 0;padding: 0;}
 .last {margin: 0 !important;}
 
 /** site/home.html **/
-.banner {display: block; width: 310px; height: 310px; text-indent: -1000em;overflow:hidden; direction: ltr;}
+.banner {display: block; height: 310px; overflow:hidden; direction: ltr;}
 .rtl .banner {background-position: 10px 0;}
 .banner-text {height: 230px; line-height: 310px; vertical-align: middle;}
 
