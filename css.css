@@ -100,7 +100,7 @@ ul {margin: 0;padding: 0;}
 /** site/contact.html **/
 textarea, input {width: 240px;}
 label {display: block;}
-.icon24 {display: block; width: 24px; height: 24px; overflow:hidden; direction: ltr;}
+.icon24 {display: block; width: 24px; height: 24px; overflow:hidden; direction: ltr; text-indent: -1000em;}
 #social {margin: 0;}
 #social a {padding: 0 0.1em;}
 
