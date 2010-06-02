@@ -1,18 +1,10 @@
 {% extends "site/catalog.html" %}
 {% load markup %}
-{% block head %}
-	{{ block.super }}
-	<style type="text/css">
-		{% if page.files.0.banner %}
-			.banner {background:url({{ page.files.0.banner.get_file }}) no-repeat;}
-		{% endif %}
-	</style>
-{% endblock %}
 
 {% block content %}
 <div class="span-24 last banner">
 	{{ page.dic.moto }}
-	<a href="{{ page.url }}" title="{{ page.name }}">{{ page.render }}</a>
+	<a href="{{ portfolio.pages.0.url }}" title="{{ portfolio.dic.moto }}">{{ page.render }}</a>
 </div>
 <div class="span-24">
 	{% with "horizontal" as catalog_class %}
