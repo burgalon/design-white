@@ -3,7 +3,9 @@
 {% block head %}
 	{{ block.super }}
 	<style type="text/css">
-		{% if page.files.0.banner %}.banner {background:url({{ page.files.0.banner.get_file }}) no-repeat;}{% endif %}}
+		{% if page.files.0.banner %}
+			.banner {background:url({{ page.files.0.banner.get_file }}) no-repeat;}
+		{% endif %}
 	</style>
 {% endblock %}
 
