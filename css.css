@@ -87,7 +87,7 @@ ul {margin: 0;padding: 0;}
 .listdetails li {clear: left;}
 .rtl .listdetails li {clear: right;}
 
-.rss {display: block; clear: both;}
+.rss {display: none; clear: both;}
 .item-sub-title {text-decoration: none; min-height: 4em; color: black;}
 
 .last {margin: 0 !important;}
