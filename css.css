@@ -61,7 +61,7 @@ ul {margin: 0;padding: 0;}
 .rtl .item-photo {float: right;}
 .item-photo.active {background: none;}
 
-.item_nav a {padding: 0.5em; display:block; text-decoration: none; float: left; background: #191a1a; color: #cccccc; margin:1em 10px 1em 0; width: 60px; text-align: center; }
+.item_nav a {padding: 0.5em; display:block; text-decoration: none; float: left; background: #666666; color: #cccccc; margin:1em 10px 1em 0; width: 60px; text-align: center; }
 .rtl .item_nav a{float:right; margin: 1em 0 1em 10px; }
 
 /** site/catalogs.inc - Catalogs **/
