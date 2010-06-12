@@ -4,7 +4,7 @@ ul li {list-style: none;}
 ul {margin: 0;padding: 0;}
 
 .button, input[type=submit], input[type=button], .submit-row input {
-    background: white url(../admin_media/img/admin/nav-bg.gif) bottom repeat-x;
+    background: white url({{ MEDIA_URL }}admin_media/img/admin/nav-bg.gif) bottom repeat-x;
     padding: 3px;
     color: black;
     border: 1px solid #bbb;
@@ -12,20 +12,20 @@ ul {margin: 0;padding: 0;}
 }
 
 .button:active, input[type=submit]:active, input[type=button]:active {
-    background-image: url(../admin_media/img/admin/nav-bg-reverse.gif);
+    background-image: url({{ MEDIA_URL }}admin_media/img/admin/nav-bg-reverse.gif);
     background-position: top;
 }
 
 .button.default, input[type=submit].default, .submit-row input.default {
     border: 2px solid #5b80b2;
-    background: #7CA0C7 url(../admin_media/img/admin/default-bg.gif) bottom repeat-x;
+    background: #7CA0C7 url({{ MEDIA_URL }}admin_media/img/admin/default-bg.gif) bottom repeat-x;
     font-weight: bold;
     color: white;
     float: right;
 }
 
 .button.default:active, input[type=submit].default:active {
-    background-image: url(../img/admin/default-bg-reverse.gif);
+    background-image: url({{ MEDIA_URL }}admin_media/img/admin/default-bg-reverse.gif);
     background-position: top;
 }
 
