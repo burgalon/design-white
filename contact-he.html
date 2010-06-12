@@ -17,10 +17,10 @@
 	{% endif %}
 	{%if form%}
 		<form method="post" action=".">
-			<p><label for="id_name">שם:</label> <input id="id_name" name="name" maxlength="100" type="text"></p>
-			<p><label for="id_email">אימייל:</label> <input id="id_email" name="email" maxlength="200" type="text"></p>
-			<p><label for="id_body">הודעה:</label> <textarea id="id_body" rows="10" cols="40" name="body"></textarea></p>
-			<input name="subject" value="Support" id="id_subject" type="hidden">
+			<p><label for="id_name">שם:</label> {{ form.neme }}</p>
+			<p><label for="id_email">אימייל:</label> {{ form.email }}</p>
+			<p><label for="id_body">הודעה:</label> {{ form.body }}</p>
+			{{ form.subject }}
 			<input type="submit" class="submit" value="שלח" />
 		</form>
 	{%endif%}
