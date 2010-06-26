@@ -3,7 +3,7 @@
 {% block content %}
 	{% if items %}
 		<h2>{{page.name}}</h2>
-		{% if page.dic.text %}{{ page.dic.text|textile }}{% endif %}
+		{% if page.dic.description %}{{ page.dic.description|textile }}{% endif %}
 		{% with "horizontal" as catalog_class %}
 			{% include "site/catalog.inc.html" %}
 		{% endwith %}
