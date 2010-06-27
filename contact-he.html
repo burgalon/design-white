@@ -17,7 +17,7 @@
 	{% endif %}
 	{%if form%}
 		<form method="post" action=".">
-			<p><label for="id_name">שם:</label> {{ form.neme }}</p>
+			<p><label for="id_name">שם:</label> {{ form.name }}</p>
 			<p><label for="id_email">אימייל:</label> {{ form.email }}</p>
 			<p><label for="id_body">הודעה:</label> {{ form.body }}</p>
 			{{ form.subject }}
@@ -26,17 +26,21 @@
 	{%endif%}
 </div>
 <div class="span-7 last">
+	{% if portfolio.dic.telephone %}
 	<h3>טלפון</h3>
 	<p>{{  portfolio.dic.telephone }}</p>
-	
+	{% endif %}
+
 	<h3>אימייל</h3>
 	<p>{{  portfolio.dic.email|obfuscate }}</p>
 	
+	{% if portfolio.dic.social %}
 	<h3>עקוב אחרינו</h3>
 	<ul id="social" class="nav">
 		{% for key,val in portfolio.dic.social|split %}
 			<li><a href="{{ val }}" class="float icon24 {{ key }}">{{ key }}</a></li>
 		{% endfor %}
 	</ul>
+	{% endif %}
 </div>
 {% endblock %}
