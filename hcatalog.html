@@ -1,14 +1,14 @@
 {% extends pack.base.template %}
 {% load markup %}
 {% block content %}
-	{% if items %}
 		<h2>{{page.name}}</h2>
 		{% if page.dic.description %}{{ page.dic.description|textile }}{% endif %}
+        {% if items %}
 		{% with "horizontal" as catalog_class %}
 			{% include "site/catalog.inc.html" %}
 		{% endwith %}
 		<a class="rss" href="rss.xml">RSS</a>
-	{% endif %}
+	    {% endif %}
 {% endblock %}
 {% block sidebar %}
 {% endblock %}
