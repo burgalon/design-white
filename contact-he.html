@@ -34,10 +34,10 @@
 	<h3>אימייל</h3>
 	<p>{{  portfolio.dic.email|obfuscate }}</p>
 	
-	{% if portfolio.dic.social %}
+	{% if page.dic.social %}
 	<h3>עקוב אחרינו</h3>
 	<ul id="social" class="nav">
-		{% for key,val in portfolio.dic.social|split %}
+		{% for key,val in page.dic.social|split %}
 			<li><a href="{{ val }}" class="float icon24 {{ key }}">{{ key }}</a></li>
 		{% endfor %}
 	</ul>
